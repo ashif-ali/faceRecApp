@@ -6,7 +6,12 @@ const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
 			<p className="f3">{'This will detect your face'}</p>
 			<div className="center">
 				<div className=" form center pa4 br3 shadow-5">
-					<input className="f4 pa2 w-70 center" type="text" onChange={onInputChange} />
+					<input
+						className="f4 pa2 w-70 center"
+						type="text"
+						onChange={onInputChange}
+						placeholder="enter an image url"
+					/>
 					<button
 						className="w-30 grow f4 link ml2 ph3 pv2 dib black bg-light-purple"
 						onClick={onButtonSubmit}
